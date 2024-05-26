@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="stylesheet" href="./css/iniciarRegistrarUsuario.css">
+</head>
+<body>
+    <div class="contenedorFormulario">
+        <h1>Crea tu cuenta</h1>
+        <form action="">
+            <label for="nombreUsuario">Nombre del usuario: </label>
+            <input type="text" placeholder="Ingrese su nombre" id="nombreUsuario" onkeypress="" required>
+
+            <label for="Correo">Correo: </label>
+            <input type="text" placeholder="Ingrese su correo" id="correo" onkeypress="" required>
+
+            <label for="contraseña">Contraseña: </label>
+            <input type="password" placeholder="Ingrese una contraseña" id="contraseña1" onkeypress="" required>
+
+            <label for="ConfirmContra">Confirmacion de contraseña: </label>
+            <input type="password" placeholder="Repita su contraseña" id="contraseña2" onkeypress="" required>
+
+            <div class="checkbox">
+                <label for="tipoUsuario">Que tipo de usuario es:</label>
+                <br>
+                <label for="tipo1">agricultor <input type="checkbox" id="tipo1"></label>
+                
+                <label for="tipo2">empresa <input type="checkbox" id="tipo2"></label>
+                <br>
+            </div>    
+
+            <input class="btn btn-1" type="submit" value="Crear Cuenta">
+
+        </form>
+        <div class="extras">
+            <a href="./inicioSesion.html">¿Ya tiene una cuenta? Inicie sesion</a>
+        </div>
+    </div> 
+</body>
+</html>
