@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="./css/iniciarRegistrarUsuario.css">
+    <script src="./js/validacionRegistrar_Iniciar_Usuario.js"></script>
 </head>
 <body>
     <div class="contenedorFormulario">
         <h1>Inicia Sesion</h1>
-        <form action="">
+        <form method="get" name="formulario" action="">
             <label for="nombreUsuario">Nombre del usuario</label>
             <input type="text" placeholder="Ingrese su nombre" id="nombreUsuario" onkeypress="" required>
 
             <label for="Correo">Correo</label>
-            <input type="text" placeholder="Ingrese su correo" id="correo" onkeypress="" required>
+            <input type="text" placeholder="Ingrese su correo" id="correo" name="correo" onsubmit="return validarCorreo(this)" required>
 
             <label for="contraseña">Contraseña</label>
             <input type="password" placeholder="Ingrese una contraseña" id="contraseña" onkeypress="" required>
