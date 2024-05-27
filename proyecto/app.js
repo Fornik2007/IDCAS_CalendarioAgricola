@@ -47,7 +47,7 @@ app.post('/login', (req, res) => {
 
 // Ruta para mostrar el formulario de registro
 app.get('/registro', (req, res) => {
-    res.render('registro');
+    res.render('registro', { message: '' }); // Asegúrate de pasar un valor por defecto o vacío
 });
 
 // Ruta para procesar el registro de usuarios
